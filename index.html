@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <header>
+    <header class="menu">
         <div class="logo">
             <h3>Thomaz.</h3>
         </div>
@@ -23,6 +23,25 @@
             </ul>
         </div>
         
+    </header>
+
+    <header class="menu-hamburguer">
+        <div class="logo-hamburguer">
+            <h3>Thomaz.</h3>
+        </div>
+
+        <div class="hamburguer-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="35px" height="35px"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M3,7c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587zM3,14c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587zM3,21c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587z"></path></g></g></svg>
+            <div class="opcoes">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Atuações</a></li>
+                    <li><a href="">Projetos</a></li>
+                    <li><a href="">Portfólio</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <section class="main-home">
@@ -41,7 +60,9 @@
                 </div>
 
                 <div class="main-home-container-esquerdo-btn">
-                    <button>Mais sobre</button>
+                    <a href="#sobre">
+                        <button>Mais sobre</button>
+                    </a>
                 </div>
             </div>
             <div class="main-home-container-direito">
@@ -53,8 +74,6 @@
             </div>
         </div>
 
-
-        <!-- teste -->
         <div class="main-home-redes-sociais">
             <div class="main-home-redes-sociais-container">
 
@@ -78,6 +97,30 @@
                     </div>
                 </div>
                 
+            </div>
+        </div>
+    </section>
+
+    <section class="main-sobre" id="sobre">
+        <div class="main-sobre-titulo">
+            <h1>Sobre <span>mim</span></h1>
+        </div>
+
+        <div class="main-sobre-container">
+            <div class="main-sobre-container-imagem">
+
+                <div class="main-sobre-container-imagem-filtro"></div>
+                <div class="main-sobre-container-imagem-img">
+                    <img src="./Images/thomaz-principal-removebg (1).png" alt="">
+                </div>
+            </div>
+
+            <div class="main-sobre-container-titulo">
+                <h2>Programador</h2>
+            </div>
+
+            <div class="main-sobre-container-texto">
+                <p>Possui graduação em Mecatrônica Industrial pelo Instituto Federal do Ceará - Reitoria (2009), mestrado em Engenharia de Teleinformática pela Universidade Federal do Ceará (2012) e doutorado em Engenharia de Teleinformática pela Universidade Federal do Ceará (2019). Atualmente é docente ebtt do Instituto Federal de Educação, Ciências e Tecnolog. Tem experiência na área de Engenharia Biomédica, com ênfase em Engenharia Biomédica, atuando principalmente nos seguintes temas: processamento de imagens, segmentação, triangulação de delaunay, contornos ativos radiais e taxa de diluição</p>
             </div>
         </div>
     </section>

@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -17,6 +18,10 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+.menu-hamburguer{
+    display: none;
+}
+
 header{
     width: 100%;
     height: 10vh;
@@ -25,6 +30,8 @@ header{
     justify-content: space-between;
     color: #EDEDED;
     position: fixed;
+    z-index: 5;
+    background-color: #081B29;
 }
 
 .logo{
@@ -127,8 +134,13 @@ header{
     align-items: center;
 }
 
-.main-home-container-esquerdo-btn > button{
+.main-home-container-esquerdo-btn > a{
     width: 20%;
+    height: 100%;
+}
+
+.main-home-container-esquerdo-btn > a > button{
+    width: 100%;
     height: 100%;
     border-radius: 10px;
     border: none;
@@ -141,7 +153,7 @@ header{
     cursor: pointer;
 }
 
-.main-home-container-esquerdo-btn > button:hover{
+.main-home-container-esquerdo-btn > a > button:hover{
     border: 2px solid #00ABF0;
     background-color: #ffffff00;
     color: #00ABF0;
@@ -212,3 +224,352 @@ header{
     height: 100%;
     cursor: pointer;
 }
+
+.main-sobre{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-sobre-titulo{
+    padding-top: 10vh;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-sobre-titulo > h1{
+    font-size: 2rem;
+    color: #EDEDED;
+    letter-spacing: 2px;
+}
+
+.main-sobre-titulo > h1 > span{
+    color: #00ABF0;
+}
+
+.main-sobre-container{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-sobre-container-imagem{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.main-sobre-container-imagem-filtro{
+    width: 10%;
+    height: 90%;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #081b291a;
+}
+
+.main-sobre-container-imagem-img{
+    width: 10%;
+    height: 90%;
+    border-radius: 50%;
+    border: 2px solid #00ABF0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-sobre-container-imagem-img > img{
+    width: 200%;
+    height: 150%;
+}
+
+.main-sobre-container-titulo{
+    width: 80%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00ABF0;
+}
+
+.main-sobre-container-titulo > h2{
+    letter-spacing: 5px;
+}
+
+.main-sobre-container-texto{
+    width: 65%;
+    color: #EDEDED;
+    font-weight: 300;
+    text-align: center;
+}
+
+/* =================================== RESPONSIVO ================================== */
+
+@media screen and (max-width: 992px) {
+
+    .menu{
+        display: none;
+    }
+
+    .menu-hamburguer{
+        display: flex;
+        width: 100%;
+        height: 10vh;
+        background-color: #081B29;
+        position: fixed;
+        top: 0;
+        z-index: 3;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-hamburguer{
+        width: 35%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .logo-hamburguer > h3{
+        font-size: 2rem;
+    }
+
+    .hamburguer-menu{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .hamburguer-menu > svg{
+        cursor: pointer;
+    }
+    .opcoes{
+        display: none;
+    }
+    
+    .hamburguer-menu:hover .opcoes{
+        width: 100%;
+        height: 25vh;
+        position: absolute;
+        background-color: #043050;
+        bottom: -247%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 0;
+    }
+    
+    
+    .opcoes > ul{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    
+        list-style: none;
+    }
+    
+    .opcoes > ul > li > a{
+        color: #F4F5F9;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    
+    
+    
+    .opcoes-um{
+        width: 45%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .opcoes-um > ul{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+    }
+    
+    .opcoes-um > ul > li > a{
+        color: #F4F5F9;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    
+    .opcoes-um > ul > li > a:hover{
+        border-bottom: 2px solid #F4F5F9;
+        
+    }
+
+    .main-home{
+        height: 120vh;
+    }
+    
+    .main-home-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-home-container-esquerdo{
+        width: 95%;
+        align-items: center;
+    }
+
+    .main-home-container-direito{
+        width: 80%;
+    }
+
+    .main-home-redes-sociais{
+        height: 10%;
+    }
+
+    .main-home-redes-sociais-container-container{
+        width: 30%;
+    }
+
+    .main-sobre-titulo{
+        padding-top: 0;
+    }
+
+    .main-sobre-container{
+        height: 65%;
+    }
+
+    .main-sobre-container-imagem-img{
+        width: 20%;
+    }
+
+    .main-sobre-container-imagem-filtro{
+        width: 20%;
+    }
+
+    .main-sobre-container-texto{
+        width: 85%;
+    }
+}
+
+
+@media screen and (max-width: 568px){
+
+    .main-home{
+        height: 200vh;
+    }
+
+    .main-home-container-esquerdo-titulo{
+        height: 20%;
+    }
+
+    .main-home-container-esquerdo-texto{
+        height: 30%;
+    }
+
+    .main-home-container-esquerdo-btn > a{
+        width: 30%;
+        height: 75%;
+    }
+
+    .main-home-container-direito{
+        height: 70%;
+    }
+
+    .main-home-redes-sociais-container-container{
+        width: 50%;
+    }
+
+    .main-sobre-container{
+        height: 75%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .logo-hamburguer{
+        width: 50%;
+    }
+
+    .main-home{
+        height: 130vh;
+    }
+
+    .main-home-container-esquerdo{
+        height: 60%;
+    }
+
+    .main-home-container-esquerdo-titulo{
+        height: 30%;
+    }
+
+    .main-home-container-esquerdo-subtitulo{
+        height: 10%;
+    }
+
+    .main-home-container-esquerdo-texto{
+        height: 50%;
+    }
+    
+    .main-home-container-esquerdo-btn{
+        height: 15%;
+    }
+
+    .main-home-container-esquerdo-btn > a{
+        height: 55%;
+    }
+
+    .main-home-container-direito{
+        height: 40%;
+    }
+
+    .main-sobre-container-imagem-filtro{
+        width: 30%;
+    }
+    
+    .main-sobre-container-imagem-img{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .main-home{
+        height: 180vh;
+    }
+
+    .main-home-container-esquerdo-btn > a{
+        height: 60%;
+        width: 35%;
+    }
+    
+    .main-home-redes-sociais-container-container{
+        width: 55%;
+    }
+
+    .main-sobre{
+        height: 110vh;
+    }
+
+    .main-sobre-titulo{
+        height: 15%;
+    }
+}
+
