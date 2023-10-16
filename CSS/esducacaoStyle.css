@@ -175,11 +175,47 @@
 
 
     .main-educacao{
-        height: 370vh;
+        height: 550vh;
     }
 
     .mains-educacao-container-cards-container{
-        height: 42vh;
+        height: 48vh;
     }
 
+    .mains-educacao-container-cards-container-enfeite-bolinha{
+        height: 7%;
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+    .main-educacao{
+        height: 530vh;
+    }
+
+    .main-educacao-container-titulo > h1{
+        width: 92%;
+    }
+
+    .mains-educacao-container-cards-container{
+        height: 47vh;
+    }
+
+    .mains-educacao-container-cards-container-card{
+        width: 95%;
+    }
+    
+    .mains-educacao-container-cards-container-enfeite-bolinha{
+        height: 5%;
+    }
+
+    .mains-educacao-container-cards-container-card-container-data-img > img{
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .mains-educacao-container-cards-container-enfeite-bolinha{
+        width: 80%;
+    }
 }

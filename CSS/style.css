@@ -321,6 +321,7 @@ header{
 
     .menu{
         display: none;
+        
     }
 
     .menu-hamburguer{
@@ -548,6 +549,8 @@ header{
     .main-sobre-container-imagem-img{
         width: 30%;
     }
+
+    
 }
 
 @media screen and (max-width: 390px) {
