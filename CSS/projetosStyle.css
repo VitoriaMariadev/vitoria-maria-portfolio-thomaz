@@ -60,3 +60,59 @@
     font-size: 0.8rem;
     padding-bottom: 2%;    
 }
+
+
+@media screen and (max-width: 992px) {
+
+    .main-projetos{
+        height: 300vh;
+    }
+
+
+
+    .main-projetos-container-card{
+        width: 45%;
+        height:13%;
+        margin-left: 2.3%;
+    }
+    
+}
+
+@media screen and (max-width: 568px){
+    .main-projetos{
+        height: 760vh;
+    }
+
+    .main-projetos-titulo{
+        height: 2%;
+    }
+
+    .main-projetos-container{
+        justify-content: center;
+    }
+
+    .main-projetos-container-card{
+        width: 70%;
+        margin-left: 0;
+        height: 7%;
+        padding: 2%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .main-projetos{
+        height: 650vh;
+    }
+
+    .main-projetos-container-card{
+        width: 85%;
+
+    }
+}
+
+
+@media screen and (max-width: 390px) {
+    .main-projetos{
+        height: 920vh;
+    }
+}
